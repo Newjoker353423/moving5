@@ -15,9 +15,6 @@ const nextConfig = {
     ignoreDuringBuilds: false,
   },
   poweredByHeader: false,
-  experimental: {
-    optimizeCss: true,
-  },
 };
 
 module.exports = nextConfig;
