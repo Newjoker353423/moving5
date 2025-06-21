@@ -1,0 +1,48 @@
+{
+  "name": "moving5-blog",
+  "version": "1.0.0",
+  "description": "مكتب الخبير المعتمد - خبراء تقييم أضرار الأثاث في السعودية",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "build:static": "next build",
+    "build:export": "next build && next export",
+    "start": "next start",
+    "serve": "npx serve out",
+    "test:build": "npm run build:static && npm run serve",
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "clean": "rm -rf .next out"
+  },
+  "dependencies": {
+    "next": "13.5.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "next-seo": "^6.1.0",
+    "schema-dts": "^1.1.2",
+    "gray-matter": "^4.0.3",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "furniture-assessment",
+    "damage-evaluation", 
+    "saudi-arabia",
+    "moving-services",
+    "nextjs",
+    "blog"
+  ]
+}

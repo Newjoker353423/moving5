@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects for Next.js static export
+
+# Handle all routes through index.html for SPA behavior
+/*    /index.html   200 
