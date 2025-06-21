@@ -1,4 +1,15 @@
-# Cloudflare Pages redirects for Next.js static export
+﻿# Cloudflare Pages redirects for Next.js static export
 
-# Handle all routes through index.html for SPA behavior
-/*    /index.html   200 
+# Handle trailing slashes
+/blog /blog/ 301
+/about /about/ 301
+/contact /contact/ 301
+/services /services/ 301
+/case-studies /case-studies/ 301
+
+# Handle specific redirects if needed
+/sitemap.xml /sitemap.xml 200
+/robots.txt /robots.txt 200
+
+# 404 fallback (no infinite loop)
+/404.html /404/ 200
