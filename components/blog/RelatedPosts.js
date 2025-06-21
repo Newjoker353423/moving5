@@ -22,6 +22,7 @@ const RelatedPosts = ({ posts, title = 'مقالات ذات صلة' }) => {
       'comprehensive-furniture-inspection-checklist': '/images/professional_packing_team.jpeg',
       'distinguishing-old-vs-new-damage': '/images/furniture_wrapping_services.jpeg',
       'common-furniture-assembly-problems': '/images/furniture_assembly_jeddah.jpeg',
+      'uniform-management-systems-for-saudi-hospitals-and-clinics': '/images/office_relocation_services.jpeg',
     };
     
     // If we have a specific image for this slug, use it
@@ -43,6 +44,26 @@ const RelatedPosts = ({ posts, title = 'مقالات ذات صلة' }) => {
     
     // Use post.image if available, otherwise fall back to category mapping
     return post.image || categoryImages[post.category] || '/images/furniture_transportation_experts.jpeg';
+  };
+
+  const getAuthorImage = (authorName) => {
+    const authorMap = {
+      'سلطان الغامدي': '/images/author/Majed_AlQahtani.png',
+      'خالد العتيبي': '/images/author/Khalid_AlOtaibi.png',
+      'نورة الدوسري': '/images/author/Noura_AlDossary.png',
+      'تركي الشهري': '/images/author/Turki_AlShehri .png',
+      'فهد الحربي': '/images/author/Fahad_AlHarbi.png',
+      'ماجد القحطاني': '/images/author/Majed_AlQahtani.png',
+      'محمد الشمري': '/images/author/Majed_AlQahtani.png',
+      // Fallback for English names
+      'Khalid AlOtaibi': '/images/author/Khalid_AlOtaibi.png',
+      'Noura AlDossary': '/images/author/Noura_AlDossary.png',
+      'Turki AlShehri': '/images/author/Turki_AlShehri .png',
+      'Fahad AlHarbi': '/images/author/Fahad_AlHarbi.png',
+      'Majed AlQahtani': '/images/author/Majed_AlQahtani.png',
+    };
+    
+    return authorMap[authorName] || '/images/author/Majed_AlQahtani.png';
   };
 
   if (!posts || posts.length === 0) return null;

@@ -52,6 +52,7 @@ const PostDetail = ({ post, content, relatedPosts }) => {
       'comprehensive-furniture-inspection-checklist': '/images/professional_packing_team.jpeg',
       'distinguishing-old-vs-new-damage': '/images/furniture_wrapping_services.jpeg',
       'common-furniture-assembly-problems': '/images/furniture_assembly_jeddah.jpeg',
+      'uniform-management-systems-for-saudi-hospitals-and-clinics': '/images/office_relocation_services.jpeg',
     };
     
     // If we have a specific image for this slug, use it
